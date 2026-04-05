@@ -1,0 +1,115 @@
+<footer class="siteFooter">
+  <div class="wrap">
+    <div aria-label="ציטוטים" class="footerQuotes">
+      <span class="quotePill">חמלה היא דרך חיים</span>
+      <span class="quotePill">חיה ותן לחיות</span>
+      <span class="quotePill">חמלה היא האופנה הכי יפה</span>
+      <span class="quotePill">היו טובים לכל היצורים</span>
+    </div>
+
+    <div class="footerGrid" aria-label="קישורים בתחתית האתר">
+      <div class="footerCol">
+        <h3 class="footerTitle">קישורים מהירים</h3>
+        <a href="products.html">מאגר מוצרים עם חיפוש</a>
+        <a href="bundles.html">מארזים משתלמים</a>
+        <a href="todays-top-deals.html">דילים חמים היום</a>
+        <a href="ingredient-detective.html">בודק רכיבים</a>
+      </div>
+
+      <div class="footerCol">
+        <h3 class="footerTitle">מותגים</h3>
+        <a href="recommended-brands.html">מותגים מומלצים מחו״ל</a>
+        <a href="israeli-brands.html">מותגים מומלצים בישראל</a>
+        <a href="pharmacy.html">מוצרים טבעוניים בפארם</a>
+      </div>
+
+      <div class="footerCol">
+        <h3 class="footerTitle">אודות ועזרה</h3>
+        <a href="about.html">על האתר</a>
+        <a href="methodology.html">איך אנחנו בודקים</a>
+        <a href="contact.html">צור קשר ותיקונים</a>
+        <a href="terms.html">תקנון ותנאי שימוש</a>
+      </div>
+    </div>
+
+    <div class="footerBottom">
+      <p class="muted footerNote">
+        חלק מהקישורים באתר עשויים להיות קישורי שותפים — זה עוזר לנו לשמור את המאגר חינמי ומעודכן, בלי עלות נוספת עבורך.
+        <a href="terms.html">פרטים בתקנון</a>
+      </p>
+
+      <p class="muted footerLegal">© 2026 NoCrueltyIL. כל הזכויות שמורות. All rights reserved.</p>
+    </div>
+  </div>
+
+  <style>
+    .footerGrid{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(15, 23, 42, 0.08);
+    }
+    .footerTitle{
+      margin: 0 0 8px;
+      font-size: 0.95rem;
+      font-weight: 1000;
+      color: rgba(15,23,42,.88);
+    }
+    .footerCol a{
+      display: block;
+      text-decoration: none;
+      padding: 6px 0;
+      font-weight: 800;
+      color: rgba(15,23,42,.78);
+    }
+    .footerCol a:hover{ color: rgba(42,91,154,.98); }
+
+    .footerBottom{ margin-top: 14px; }
+    .footerNote{ margin-top: 10px; }
+    .footerLegal{ margin-top: 10px; opacity: .9; }
+
+    @media (max-width: 820px){
+      .footerGrid{ grid-template-columns: 1fr; }
+      .footerCol a{ padding: 4px 0; }
+    }
+  </style>
+</footer>
+
+<nav class="bottomBar" aria-label="ניווט מהיר">
+    <a href="index.html" class="bottomBarItem">
+      <span class="bottomBarIcon">🏠</span>
+      <span class="bottomBarLabel">בית</span>
+    </a>
+    <a href="products.html" class="bottomBarItem">
+      <span class="bottomBarIcon">🔍</span>
+      <span class="bottomBarLabel">מוצרים</span>
+    </a>
+    <a href="ingredient-detective.html" class="bottomBarItem bottomBarItem--cta">
+      <span class="bottomBarIcon">🧪</span>
+      <span class="bottomBarLabel">רכיבים</span>
+    </a>
+    <a href="todays-top-deals.html" class="bottomBarItem">
+      <span class="bottomBarIcon">🔥</span>
+      <span class="bottomBarLabel">דילים</span>
+    </a>
+    <a href="bundles.html" class="bottomBarItem">
+      <span class="bottomBarIcon">🤝</span>
+      <span class="bottomBarLabel">באנדלים</span>
+    </a>
+  </nav>
+
+  <style>
+    /* Mobile bottom nav */
+    .bottomBar{position:fixed;left:0;right:0;bottom:0;display:none;gap:4px;justify-content:space-between;align-items:stretch;padding:8px 10px;border-top:1px solid rgba(0,0,0,.08);background:rgba(255,255,255,.92);backdrop-filter:blur(8px);z-index:1000}
+    .bottomBarItem{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border-radius:12px;padding:8px 6px;text-decoration:none}
+    .bottomBarIcon{font-size:18px;line-height:1}
+    .bottomBarLabel{font-size:12px;line-height:1.1;font-weight:600}
+    .bottomBarItem--cta{background:rgba(0,0,0,.06)}
+    @media (max-width: 900px){
+      .bottomBar{display:flex}
+      body{padding-bottom:76px}
+    }
+  </style>
+

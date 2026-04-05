@@ -1,0 +1,39 @@
+<header class="site-shell-header" dir="rtl">
+  <style>
+    .site-shell-header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(15,23,42,.08);font-family:Assistant,Arial,sans-serif}
+    .site-shell-header .shell-wrap{max-width:1180px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    .site-shell-header .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#0f172a;min-width:0}
+    .site-shell-header .brand-mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#0f172a,#2563eb);display:grid;place-items:center;color:#fff;font-size:20px;flex:0 0 auto}
+    .site-shell-header .brand-copy{display:flex;flex-direction:column;line-height:1.1}
+    .site-shell-header .brand-title{font-weight:900;font-size:1rem}
+    .site-shell-header .brand-subtitle{font-size:.83rem;color:rgba(15,23,42,.68);font-weight:700}
+    .site-shell-header .shell-nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+    .site-shell-header .shell-link{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:999px;text-decoration:none;color:#0f172a;background:rgba(15,23,42,.04);border:1px solid transparent;font-weight:800;font-size:.95rem;transition:transform .14s ease,background .14s ease,border-color .14s ease}
+    .site-shell-header .shell-link:hover{transform:translateY(-1px);background:rgba(15,23,42,.08)}
+    .site-shell-header .shell-link.primary{background:rgba(37,99,235,.10);border-color:rgba(37,99,235,.22)}
+    .site-shell-header .shell-link.secondary{background:rgba(245,158,11,.12);border-color:rgba(245,158,11,.22)}
+    .site-shell-header .shell-link.ghost{background:transparent;border-color:rgba(15,23,42,.10)}
+    @media (max-width:760px){
+      .site-shell-header .shell-wrap{justify-content:center}
+      .site-shell-header .brand{width:100%;justify-content:center}
+      .site-shell-header .shell-nav{justify-content:center}
+      .site-shell-header .shell-link{padding:9px 12px;font-size:.92rem}
+    }
+  </style>
+  <div class="shell-wrap">
+    <a class="brand" href="/index.html" aria-label="דף הבית">
+      <span class="brand-mark" aria-hidden="true">🐾</span>
+      <span class="brand-copy">
+        <span class="brand-title">PetConnect × KBWG</span>
+        <span class="brand-subtitle">אבודים ונמצאו קודם, מארזים וכלי קנייה כתוספת</span>
+      </span>
+    </a>
+    <nav class="shell-nav" aria-label="ניווט ראשי מאוחד">
+      <a class="shell-link primary" href="/index.html">אבודים ונמצאו</a>
+      <a class="shell-link" href="/search.html?mode=lost">חיפוש חיה</a>
+      <a class="shell-link" href="/report-found.html?kind=found">דיווח חיה</a>
+      <a class="shell-link secondary" href="/bundles.html">מארזים</a>
+      <a class="shell-link ghost" href="/kbwg-home.html">שאר דפי KBWG</a>
+    </nav>
+  </div>
+</header>
